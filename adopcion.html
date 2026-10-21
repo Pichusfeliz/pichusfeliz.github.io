@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peluditos | Adopción</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <a class="logo" href="index.html"><img src="img/logo-mark.svg" alt="">Peluditos</a>
+    <nav class="menu">
+      <a href="index.html">Inicio</a>
+      <a href="mascotas.html">Mascotas</a>
+      <a class="activo" href="adopcion.html">Adopción</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <a class="boton boton--principal" href="adopcion.html#formulario">Adoptar</a>
+  </header>
+
+  <main>
+
+    <section class="seccion fondo-crema cabecera-pagina cabecera-pagina--centro">
+      <h1>Cómo funciona el proceso</h1>
+      <p>Un camino sencillo y transparente para que tu mascota llegue a casa.</p>
+    </section>
+
+    <section class="seccion">
+      <div class="rejilla col-4">
+        <div class="paso paso--borde">
+          <span class="etiqueta etiqueta--calida">Paso 1</span>
+          <h3>Conoce a tu mascota</h3>
+          <p>Explora los perfiles, conoce su historia y visita a quien te robe el corazón.</p>
+        </div>
+        <div class="paso paso--borde">
+          <span class="etiqueta etiqueta--calida">Paso 2</span>
+          <h3>Envía tu solicitud</h3>
+          <p>Completa el formulario de 3 pasos con tus datos y los de tu hogar.</p>
+        </div>
+        <div class="paso paso--borde">
+          <span class="etiqueta etiqueta--calida">Paso 3</span>
+          <h3>Entrevista y visita</h3>
+          <p>Conversamos contigo y coordinamos una visita para conocernos mejor.</p>
+        </div>
+        <div class="paso paso--borde">
+          <span class="etiqueta etiqueta--calida">Paso 4</span>
+          <h3>Bienvenida a casa</h3>
+          <p>Firmamos el compromiso de adopción y tu mascota llega a su nuevo hogar.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion fondo-arena">
+      <div class="requisitos">
+        <div>
+          <h2>Requisitos para adoptar</h2>
+          <p>Queremos asegurarnos de que cada mascota llegue a un hogar responsable y amoroso. Estos son los requisitos básicos.</p>
+        </div>
+        <ul class="lista-requisitos">
+          <li>Ser mayor de 18 años</li>
+          <li>Identificación oficial vigente</li>
+          <li>Comprobante de domicilio</li>
+          <li>Espacio adecuado para la mascota</li>
+          <li>Compromiso de cuidado y visitas de seguimiento</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <h2 class="titulo-solo">Preguntas frecuentes</h2>
+      <div class="preguntas">
+        <details open>
+          <summary>¿Cuánto cuesta adoptar?</summary>
+          <p>La adopción tiene una cuota de recuperación simbólica que cubre vacunas y esterilización. Te la explicamos durante la entrevista.</p>
+        </details>
+        <details>
+          <summary>¿Cuánto tarda el proceso?</summary>
+          <p>Depende de cada caso. En la entrevista te confirmamos los tiempos.</p>
+        </details>
+        <details>
+          <summary>¿Puedo adoptar si vivo en departamento?</summary>
+          <p>Sí, siempre que el espacio sea adecuado para la mascota que elijas.</p>
+        </details>
+        <details>
+          <summary>¿Qué pasa si no se adapta?</summary>
+          <p>Te acompañamos con seguimiento y buscamos la mejor solución para ambos.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="seccion fondo-crema" id="formulario">
+      <form class="formulario-tarjeta" action="#">
+        <h2>Formulario de solicitud</h2>
+
+        <div class="indicador">
+          <span class="indicador-paso actual"><b>1</b>Datos personales</span>
+          <span class="linea"></span>
+          <span class="indicador-paso"><b>2</b>Tu hogar</span>
+          <span class="linea"></span>
+          <span class="indicador-paso"><b>3</b>Confirmación</span>
+        </div>
+
+        <div class="fila-campos">
+          <div>
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" placeholder="Tu nombre">
+          </div>
+          <div>
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" placeholder="tucorreo@ejemplo.com">
+          </div>
+        </div>
+
+        <div class="fila-campos">
+          <div>
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" placeholder="+00 000 000 000">
+          </div>
+          <div>
+            <label for="ciudad">Ciudad</label>
+            <input type="text" id="ciudad" placeholder="Tu ciudad">
+          </div>
+        </div>
+
+        <div>
+          <label for="mascota">Mascota de interés</label>
+          <select id="mascota">
+            <option>Selecciona una mascota</option>
+            <option>Luna</option><option>Max</option><option>Rocky</option>
+            <option>Mía</option><option>Toby</option><option>Nala</option>
+          </select>
+        </div>
+
+        <div class="alinear-derecha">
+          <button class="boton boton--principal boton--grande" type="submit">Siguiente</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <div class="pie-columnas">
+      <div class="pie-marca">
+        <span class="pie-nombre">Peluditos</span>
+        <span>Conectamos mascotas que necesitan un hogar con familias que quieren darles amor.</span>
+      </div>
+      <div>
+        <strong>Explorar</strong>
+        <a href="index.html">Inicio</a>
+        <a href="mascotas.html">Mascotas</a>
+        <a href="adopcion.html">Adopción</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div>
+        <strong>Contacto</strong>
+        <span>hola@huellitas.org</span>
+        <span>+51 956 445 670</span>
+        <span>Lun a Sáb · 9:00 – 18:00</span>
+      </div>
+      <div>
+        <strong>Síguenos</strong>
+        <a href="https://www.instagram.com/?hl=es-la">Instagram</a>
+        <a href="https://www.facebook.com/?locale=es_LA">Facebook</a>
+        <a href="https://www.tiktok.com/es/">TikTok</a>
+        <a href="https://web.whatsapp.com/">WhatsApp</a>
+      </div>
+    </div>
+    <hr>
+    <small>© 2026 Huellitas. Todos los derechos reservados.</small>
+  </footer>
+
+</body>
+</html>

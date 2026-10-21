@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peluditos | Mascotas</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <a class="logo" href="index.html"><img src="img/logo-mark.svg" alt="">Peluditos</a>
+    <nav class="menu">
+      <a href="index.html">Inicio</a>
+      <a class="activo" href="mascotas.html">Mascotas</a>
+      <a href="adopcion.html">Adopción</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <a class="boton boton--principal" href="adopcion.html#formulario">Adoptar</a>
+  </header>
+
+  <main>
+
+    <section class="seccion fondo-crema cabecera-pagina">
+      <h1>Nuestras mascotas</h1>
+      <p>Encuentra a tu compañero ideal con los filtros.</p>
+    </section>
+
+    <section class="seccion">
+
+      <form class="filtros" action="#">
+        <div>
+          <label for="especie">Especie</label>
+          <select id="especie"><option>Todas</option><option>Perro</option><option>Gato</option></select>
+        </div>
+        <div>
+          <label for="edad">Edad</label>
+          <select id="edad"><option>Cualquiera</option><option>Cachorro</option><option>Adulto</option><option>Senior</option></select>
+        </div>
+        <div>
+          <label for="tamano">Tamaño</label>
+          <select id="tamano"><option>Todos</option><option>Pequeño</option><option>Mediano</option><option>Grande</option></select>
+        </div>
+        <div>
+          <label for="ubicacion">Ubicación</label>
+          <select id="ubicacion"><option>Cualquiera</option><option>Ciudad</option></select>
+        </div>
+        <button class="boton boton--principal" type="submit">Buscar</button>
+      </form>
+
+      <div class="rejilla col-2">
+
+        <article class="tarjeta">
+          <div class="foto foto-luna"><img src="img/gatitogris.jpg" alt="Luna, una gata gris"></div>
+          <div class="tarjeta-info">
+            <h3>Luna</h3>
+            <p class="datos">Gata · 2 años · Pequeña</p>
+            <div class="etiquetas"><span class="etiqueta">Vacunada</span><span class="etiqueta etiqueta--calida">Esterilizada</span></div>
+            <a class="boton boton--borde boton--ancho" href="adopcion.html#formulario">Adoptar</a>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="foto foto-max"><img src="img/perritofeliz.jpg" alt="Max, un perro esperando un hogar"></div>
+          <div class="tarjeta-info">
+            <h3>Max</h3>
+            <p class="datos">Perro · 3 años · Mediano</p>
+            <div class="etiquetas"><span class="etiqueta">Vacunado</span><span class="etiqueta etiqueta--calida">Esterilizado</span></div>
+            <a class="boton boton--borde boton--ancho" href="adopcion.html#formulario">Adoptar</a>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="foto foto-rocky"><img src="img/portada-video.jpg" alt="Rocky, un perro esperando ser adoptado"></div>
+          <div class="tarjeta-info">
+            <h3>Rocky</h3>
+            <p class="datos">Perro · 1 año · Grande</p>
+            <div class="etiquetas"><span class="etiqueta">Vacunado</span><span class="etiqueta etiqueta--calida">Esterilizado</span></div>
+            <a class="boton boton--borde boton--ancho" href="adopcion.html#formulario">Adoptar</a>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="foto foto-mia"><img src="img/foto-gata-mia.jpg" alt="foto-gata-mia"></div>
+          <div class="tarjeta-info">
+            <h3>Mía</h3>
+            <p class="datos">Gata · 4 años · Pequeña</p>
+            <div class="etiquetas"><span class="etiqueta">Vacunada</span><span class="etiqueta etiqueta--calida">Esterilizada</span></div>
+            <a class="boton boton--borde boton--ancho" href="adopcion.html#formulario">Adoptar</a>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="foto foto-toby"><img src="img/toby2.jpg" alt="foto-toby"></div>
+          <div class="tarjeta-info">
+            <h3>Toby</h3>
+            <p class="datos">Perro · 5 años · Mediano</p>
+            <div class="etiquetas"><span class="etiqueta">Vacunado</span><span class="etiqueta etiqueta--calida">Esterilizado</span></div>
+            <a class="boton boton--borde boton--ancho" href="adopcion.html#formulario">Adoptar</a>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="foto foto-nala"><img src="img/gata-nala.jpg" alt="foto-gata-nala"></div>
+          <div class="tarjeta-info">
+            <h3>Nala</h3>
+            <p class="datos">Gata · 6 meses · Pequeña</p>
+            <div class="etiquetas"><span class="etiqueta">Vacunada</span><span class="etiqueta etiqueta--calida">Esterilizada</span></div>
+            <a class="boton boton--borde boton--ancho" href="adopcion.html#formulario">Adoptar</a>
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- Ficha de Luna: se abre con #ficha-luna y se cierra con el enlace ✕ -->
+    <div class="ventana" id="ficha-luna">
+      <div class="ficha">
+        <div class="foto foto-luna"><img src="img/gatitogris.jpg" alt="Luna, una gata gris"></div>
+        <div>
+          <div class="ficha-titulo">
+            <h2>Luna</h2>
+            <a class="ficha-cerrar" href="#" aria-label="Cerrar">✕</a>
+          </div>
+          <p>Gata · 2 años · Pequeña</p>
+          <div class="etiquetas">
+            <span class="etiqueta">Vacunada</span>
+            <span class="etiqueta etiqueta--calida">Esterilizada</span>
+            <span class="etiqueta">Sociable</span>
+          </div>
+          <p>Luna es una gata cariñosa y juguetona. Se lleva bien con niños y otros gatos, y busca un hogar tranquilo donde pueda recibir mucho amor.</p>
+          <div class="ficha-datos">
+            <div><small>Edad</small>2 años</div>
+            <div><small>Tamaño</small>Pequeña</div>
+            <div><small>Peso</small>4 kg</div>
+            <div><small>Ubicación</small>Ciudad</div>
+          </div>
+          <div class="ficha-botones">
+            <a class="boton boton--principal" href="adopcion.html#formulario">Solicitar adopción</a>
+            <a class="boton boton--borde" href="#">Cerrar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="pie">
+    <div class="pie-columnas">
+      <div class="pie-marca">
+        <span class="pie-nombre">Peluditos</span>
+        <span>Conectamos mascotas que necesitan un hogar con familias que quieren darles amor.</span>
+      </div>
+      <div>
+        <strong>Explorar</strong>
+        <a href="index.html">Inicio</a>
+        <a href="mascotas.html">Mascotas</a>
+        <a href="adopcion.html">Adopción</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div>
+        <strong>Contacto</strong>
+        <span>hola@huellitas.org</span>
+        <span>+51 956 445 670</span>
+        <span>Lun a Sáb · 9:00 – 18:00</span>
+      </div>
+      <div>
+        <strong>Síguenos</strong>
+        <a href="https://www.instagram.com/?hl=es-la">Instagram</a>
+        <a href="https://www.facebook.com/?locale=es_LA">Facebook</a>
+        <a href="https://www.tiktok.com/es/">TikTok</a>
+        <a href="https://web.whatsapp.com/">WhatsApp</a>
+      </div>
+    </div>
+    <hr>
+    <small>© 2026 Huellitas. Todos los derechos reservados.</small>
+  </footer>
+
+</body>
+</html>
